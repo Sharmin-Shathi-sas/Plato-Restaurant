@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+
+    <style>
+        .alex-brush-font {
+            font-family: "Alex Brush", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .rubik-font {
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .playfair-display-font {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body class="rubik-font">
+
+    <!--Navbar-->
+
+    <!-- Main navigation container -->
+    <nav class="sticky top-0 z-50 relative flex w-full flex-wrap items-center justify-between py-2 bg-[#222222] lg:py-6 px-8 lg:px-16"
+        data-twe-navbar-ref>
+        <div class="flex w-full items-center justify-between">
+            <!-- Left section (Logo) -->
+            <div class="flex items-center">
+                <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="#">
+                    <img class="me-2" src="assests/logo.png" style="height: 20px" alt="TE Logo" loading="lazy" />
+                </a>
+            </div>
+
+            <!-- Right section (Hamburger button and links/buttons) -->
+            <div class="flex items-center">
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 px-2 text-white hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent4"
+                    aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <span class="[&>svg]:w-8 h-8 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Collapsible navbar container -->
+                <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                    id="navbarSupportedContent4" data-twe-collapse-item>
+                    <!-- Right links -->
+                    <ul class="list-style-none me-auto flex flex-col ps-0 lg:flex-row lg:space-x-2"
+                        data-twe-navbar-nav-ref>
+                        <!-- Home link -->
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>HOME</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>ABOUT</a>
+                        </li>
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>TODAY'S SPECIAL</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>MENU</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>RESERVATION</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>TEAM</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>GALLERY</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>CONTACT</a>
+                        </li>
+
+                        <li class="my-4 ps-2 lg:my-0 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 lg:px-2 text-xs" aria-current="page" href="#"
+                                data-twe-nav-link-ref>BLOG</a>
+                        </li>
+                        <li class="my-4 ps-2 lg:my-1 lg:ps-2" data-twe-nav-item-ref>
+                            <a class="text-white/60 mt-4  text-xs" aria-current="page" href="#" data-twe-nav-link-ref>
+                                <span
+                                    class="flex items-center whitespace-nowrap rounded text-center text-white/60 font-normal text-gray-600 dark:text-white [&>svg]:w-5"
+                                    id="basic-addon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                </div>
+                </li>
+                </ul>
+
+
+
+
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--Carousel-->
+    <header>
+        <div id="carouselDarkVariant" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+            <div id="carouselDarkVariant" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+                <!-- Carousel indicators -->
+                <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-twe-carousel-indicators>
+                    <button data-twe-target="#carouselDarkVariant" data-twe-slide-to="0" data-twe-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button data-twe-target="#carouselDarkVariant"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        data-twe-slide-to="1" aria-label="Slide 1"></button>
+                    <button data-twe-target="#carouselDarkVariant"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        data-twe-slide-to="2" aria-label="Slide 1"></button>
+                </div>
+
+                <!-- Carousel items -->
+                <div class="relative w-full overflow-hidden">
+                    <!-- First item -->
+                    <div class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
+                        <img src="assests/slide1 (2).jpg" class="block w-full" alt="Motorbike Smoke" />
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center py-5 text-center text-white gap-10 md:gap-20">
+                            <h5 class="text-5xl md:text-7xl alex-brush-font">Enjoy Our food</h5>
+                            <p class="font-large md:text-xl">
+                                Only The Best Ingrediant For Our Dishes
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Second item -->
+                    <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item>
+                        <img src="assests/slide1 (3).jpg" class="block w-full" alt="Mountaintop" />
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center py-5 text-center text-white gap-10 md:gap-20">
+                            <h5 class="text-5xl md:text-7xl alex-brush-font">Elegant Interior & Design</h5>
+                            <p class="font-large md:text-xl">
+                                High-class Professional Service
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Third item -->
+                    <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-twe-carousel-fade data-twe-carousel-item>
+                        <img src="assests/slide2.jpg" class="block w-full" alt="Woman Reading a Book" />
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center py-5 text-center text-white gap-10 md:gap-20">
+                            <h5 class="text-5xl md:text-7xl alex-brush-font">Tradition & Passion</h5>
+                            <p class="font-large md:text-xl">
+                                Only The Best Ingrediant For Our Dishes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </header>
+
+    <main>
+        <!--Discover our story-->
+        <div class="py-8 lg:py-12 px-8 lg:px-16">
+
+            <!--history text-->
+            <div class="flex justify-center items-center px-0 md:px-24 py-4">
+                <div class="w-full md:w-8/12 text-center">
+                    <h3 class="playfair-display-font text-3xl text-[#222222] mb-4">Discover Our Story</h3>
+                    <div class="border-b-4 border-b-[#F4B350] mx-auto mb-4" style="width: 2rem;">
+                    </div>
+                    <p class="text-[#9FA19F]">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis optio, inventore corporis
+                        a rerum assumenda magni nisi voluptatibus laudantium sed unde, harum molestiae voluptatem
+                        voluptas magnam recusandae placeat rem quod!
+                    </p>
+                </div>
+            </div>
+            <!--History Card-->
+            <div class="md:flex relative py-6 md:py-16 md:gap-16">
+                <div class="flex md:w-1/2 gap-2 pb-10 md:pb-0">
+                    <div class="relative top-6">
+                        <img src="assests/history2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assests/history1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="md:w-4/12 flex flex-col align-center justify-center">
+                    <h1 class="playfair-display-font text-3xl">Our History</h1>
+                    <p class="py-8 text-[#9FA19F]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam optio voluptate deserunt atque
+                        saepe aliquam ratione modi veritatis consectetur error.
+                    </p>
+                    <img src="assests/signature.png" alt="" style="width: 12rem; height: 6rem;">
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
